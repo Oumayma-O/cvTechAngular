@@ -1,0 +1,10 @@
+<div *ngIf="firstTodo$ | async as firstTodo">
+  The first todo is :
+  {{ firstTodo.id }} | {{firstTodo.title}}
+</div>
+
+<ol>
+  <li *ngFor="let todo of todos$ | async">
+    <pre>{{todo | json}}</pre>
+  </li>
+</ol>
