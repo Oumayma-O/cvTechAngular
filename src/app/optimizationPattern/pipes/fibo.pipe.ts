@@ -1,14 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
-
-import memo from "memo-decorator";
+// memo decorator
+import memo from 'memo-decorator';
 
 @Pipe({
-  name: 'fibo'
+  name: 'fibo',
+  pure: true,
 })
 export class FiboPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(n: number): number {
+    return this.fibonnaci(n);
   }
 
   @memo()

@@ -20,6 +20,8 @@ import { FilsComponent } from './components/fils/fils.component';
 import { RhComponent } from './optimizationPattern/rh/rh.component';
 import { UserListComponent } from './optimizationPattern/user-list/user-list.component';
 import { FiboPipe } from './optimizationPattern/pipes/fibo.pipe';
+import { AddUserComponent } from './optimizationPattern/add-user/add-user.component';
+import { ChartComponent } from './optimizationPattern/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FiboPipe } from './optimizationPattern/pipes/fibo.pipe';
     FilsComponent,
     RhComponent,
     UserListComponent,
-    FiboPipe
+    FiboPipe,
+    AddUserComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
